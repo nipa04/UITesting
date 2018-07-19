@@ -32,25 +32,15 @@ class coder_swagUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
+        
         let app = XCUIApplication()
         let tablesQuery = app.tables
-        let shirtsStaticText = tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["SHIRTS"]/*[[".cells.staticTexts[\"SHIRTS\"]",".staticTexts[\"SHIRTS\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        shirtsStaticText/*@START_MENU_TOKEN@*/.swipeRight()/*[[".swipeDown()",".swipeRight()"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        shirtsStaticText.tap()
-        
-        let cellsQuery = app.collectionViews.cells
-        cellsQuery.otherElements.containing(.image, identifier:"shirt01").element.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["SHIRTS"]/*[[".cells.staticTexts[\"SHIRTS\"]",".staticTexts[\"SHIRTS\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.otherElements.containing(.navigationBar, identifier:"SHIRTS").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .collectionView).element.swipeUp()
         app.navigationBars["SHIRTS"].buttons["CODER SWAG"].tap()
-        
-        let hatsStaticText = tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["HATS"]/*[[".cells.staticTexts[\"HATS\"]",".staticTexts[\"HATS\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        hatsStaticText.swipeUp()
-        hatsStaticText.tap()
-        app.navigationBars["HATS"].buttons["CODER SWAG"].tap()
-        app.staticTexts["SHOP BY CATEGORY"].tap()
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["HOODIES"]/*[[".cells.staticTexts[\"HOODIES\"]",".staticTexts[\"HOODIES\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeDown()
-        cellsQuery.otherElements.containing(.image, identifier:"hoodie04.png").element.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["HOODIES"]/*[[".cells.staticTexts[\"HOODIES\"]",".staticTexts[\"HOODIES\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.navigationBars["HOODIES"].buttons["CODER SWAG"].tap()
-        
+
     }
     
 }
