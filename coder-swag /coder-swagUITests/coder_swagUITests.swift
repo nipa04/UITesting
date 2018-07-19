@@ -9,7 +9,9 @@
 import XCTest
 
 class coder_swagUITests: XCTestCase {
-        
+    
+    let app = XCUIApplication()
+   
     override func setUp() {
         super.setUp()
         
@@ -41,6 +43,37 @@ class coder_swagUITests: XCTestCase {
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["HOODIES"]/*[[".cells.staticTexts[\"HOODIES\"]",".staticTexts[\"HOODIES\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         app.navigationBars["HOODIES"].buttons["CODER SWAG"].tap()
 
+    }
+    func testAppIsLauch() {
+        let app = XCUIApplication()
+        app.launch()
+        
+    }
+
+    func testAppISActivate(){
+        app.activate()
+    }
+    func testAppIsTerminate() {
+        app.terminate()
+    }
+    func testTableViewCell1(){
+        let table = app.tables.cells.staticTexts["SHIRTS"]
+        table.tap()
+    }
+    func testTableViewCell2() {
+        let table = app.tables.cells.staticTexts["HOODIES"]
+        table.tap()
+    }
+    func testTableViewCell3() {
+        let table = app.tables.cells.staticTexts["HATS"]
+        table.tap()
+    }
+    func testTableViewCell4(){
+        let table = app.tables.cells.staticTexts["DIGITAL"]
+        table.tap()
+    }
+    func testCollectionViewOfCell1() {
+        
     }
     
 }
