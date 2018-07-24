@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        let resetEnabled = ProcessInfo.processInfo.environment.contains { (element) -> Bool in
+//            return element.key == "RESET_DATA" && element.value == "TRUE"
+//        }
+        let resetEnabled = ProcessInfo.processInfo.environment["RESET_DATA"] == "TRUE"
+        if resetEnabled {
+            LocalData.sharedInstance.reset()
+        }
         return true
     }
 
