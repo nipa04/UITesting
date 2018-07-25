@@ -23,8 +23,23 @@ class Product {
         return HostApplication.navigationBars.staticTexts["DIGITALS"].buttons["CODER SWAG"]
     }
     
+    private static var collectionViewShirt : XCUIElement {
+        let cellsQuery = HostApplication.collectionViews.cells
+        return cellsQuery.otherElements.containing(.image, identifier: "shirt01").element
+    }
+    private static var collectionViewHoodies: XCUIElement {
+        
+        let cellsQuery = HostApplication.collectionViews.cells
+        return cellsQuery.otherElements.containing(.image, identifier: "hoodie01.png").element
+        
+    }
+    private static var collectionViewHat: XCUIElement {
+        
+        let cellsQuery = HostApplication.collectionViews.cells
+        return cellsQuery.otherElements.containing(.image, identifier: "hat01.png").element
+        
+    }
     
-
     static func shirtBack() {
         shirtBackButton.tap()
     }
@@ -37,6 +52,17 @@ class Product {
     }
     static func digitalBack() {
         digitalBackButton.tap()
+    }
+    
+    
+    static func tapCollectionViewShirt() {
+        collectionViewShirt.tap()
+    }
+    static func tapCollectionViewHoodies() {
+        collectionViewHoodies.tap()
+    }
+    static func tapCollectionViewHat() {
+        collectionViewHat.tap()
     }
     
 }
