@@ -10,34 +10,35 @@ import XCTest
 
 class Product {
     
-    private static var shirtBackButton: XCUIElement {
+    static var shirtBackButton: XCUIElement {
         return HostApplication.navigationBars["SHIRTS"].buttons["CODER SWAG"]
     }
-    private static var hoodiesBackButton: XCUIElement {
+   static var hoodiesBackButton: XCUIElement {
         return HostApplication.navigationBars["HOODIES"].buttons["CODER SWAG"]
     }
-    private static var hatBackButton: XCUIElement {
+    static var hatBackButton: XCUIElement {
         return HostApplication.navigationBars["HATS"].buttons["CODER SWAG"]
     }
-    private static var digitalBackButton : XCUIElement {
-        return HostApplication.navigationBars.staticTexts["DIGITALS"].buttons["CODER SWAG"]
+    static var digitalBackButton : XCUIElement {
+        return HostApplication.navigationBars["DIGITAL"].buttons["CODER SWAG"]
     }
     
-    private static var collectionViewShirt : XCUIElement {
+   static var collectionViewShirt : XCUIElement {
         let cellsQuery = HostApplication.collectionViews.cells
         return cellsQuery.otherElements.containing(.image, identifier: "shirt01").element
     }
-    private static var collectionViewHoodies: XCUIElement {
-        
+    
+    public static var collectionViewHoodies: XCUIElement {
         let cellsQuery = HostApplication.collectionViews.cells
         return cellsQuery.otherElements.containing(.image, identifier: "hoodie01.png").element
-        
     }
-    private static var collectionViewHat: XCUIElement {
-        
+    public static var collectionViewHat: XCUIElement {
         let cellsQuery = HostApplication.collectionViews.cells
         return cellsQuery.otherElements.containing(.image, identifier: "hat01.png").element
-        
+    }
+    public static var collectionViewDigital : XCUIElement {
+        let cellsQuery = HostApplication.collectionViews.cells
+        return cellsQuery.element
     }
     
     static func shirtBack() {
@@ -63,6 +64,9 @@ class Product {
     }
     static func tapCollectionViewHat() {
         collectionViewHat.tap()
+    }
+    static func tapCollectionViewDigital() {
+        collectionViewDigital.tap()
     }
     
 }

@@ -20,9 +20,9 @@ class Category {
         return HostApplication.tables.staticTexts["HATS"]
     }
     static var tableDigitalCell : XCUIElement{
-        return HostApplication.tables.staticTexts["DIGITALS"]
+        return HostApplication.tables.staticTexts["DIGITAL"]
     }
-    private static var title: XCUIElement {
+        static var title: XCUIElement {
         return HostApplication.navigationBars["CODER SWAG"]
     }
     
