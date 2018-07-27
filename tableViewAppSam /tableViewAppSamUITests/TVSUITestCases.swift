@@ -10,10 +10,11 @@ import XCTest
 
 class TVSUITestCases: TVSUITestBase {
         
-
-    override func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testTableViewCells(){
+        Table.tapIronMan()
+        let exits = Table.tableOfIronMan.exists
+        XCTAssertTrue( exits, "Doesn't exits")
     }
     
 }

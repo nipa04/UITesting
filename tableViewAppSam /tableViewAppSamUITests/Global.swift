@@ -6,7 +6,6 @@
 //  Copyright © 2018 iOS developer. All rights reserved.
 //
 
-import Foundation
 import XCTest
 
 let app = XCUIApplication()
