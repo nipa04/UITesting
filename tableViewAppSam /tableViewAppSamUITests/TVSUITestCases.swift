@@ -10,11 +10,26 @@ import XCTest
 
 class TVSUITestCases: TVSUITestBase {
         
-    
-    func testTableViewCells(){
-        Table.tapIronMan()
-        let exits = Table.tableOfIronMan.exists
+    func testTableView1stCell(){
+        Category.tapIronMan()
+        let exits = Category.tableOfIronMan.exists
         XCTAssertTrue( exits, "Doesn't exits")
+    }
+    func testTableView2ndCell() {
+        Category.tapSpiderMan()
+        let exits = Category.tableOfSpiderMan.exists
+        XCTAssertTrue(exits, "Doesn't exits")
+        
+        }
+    func testTableView3rdCell() {
+        Category.tapBatman()
+        let exits = Category.tableOfBatMan.exists
+        XCTAssertTrue(exits, "Doesn't esits")
+    }
+    func testTablePageLoaded() {
+        Category.pageLoaded()
+        Category.tapIronMan()
+        XCTAssertTrue(Category.pageLoaded(), "Title page not exits")
     }
     
 }

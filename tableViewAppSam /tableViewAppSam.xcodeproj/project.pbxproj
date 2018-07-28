@@ -14,7 +14,7 @@
 		E40B518420C9A25C00EE8EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40B518220C9A25C00EE8EB7 /* LaunchScreen.storyboard */; };
 		E452F2D4210A3F3400905C1F /* TVSUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452F2D3210A3F3400905C1F /* TVSUITestBase.swift */; };
 		E452F2DC210A400F00905C1F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452F2DB210A400F00905C1F /* Global.swift */; };
-		E452F2E0210A438A00905C1F /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452F2DF210A438A00905C1F /* Pages.swift */; };
+		E452F2E0210A438A00905C1F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452F2DF210A438A00905C1F /* Category.swift */; };
 		E452F2E2210A450C00905C1F /* TVSUITestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E452F2E1210A450C00905C1F /* TVSUITestCases.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		E452F2D3210A3F3400905C1F /* TVSUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSUITestBase.swift; sourceTree = "<group>"; };
 		E452F2D5210A3F3400905C1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E452F2DB210A400F00905C1F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		E452F2DF210A438A00905C1F /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		E452F2DF210A438A00905C1F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E452F2E1210A450C00905C1F /* TVSUITestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSUITestCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E452F2DB210A400F00905C1F /* Global.swift */,
-				E452F2DF210A438A00905C1F /* Pages.swift */,
+				E452F2DF210A438A00905C1F /* Category.swift */,
 				E452F2D3210A3F3400905C1F /* TVSUITestBase.swift */,
 				E452F2E1210A450C00905C1F /* TVSUITestCases.swift */,
 				E452F2D5210A3F3400905C1F /* Info.plist */,
@@ -219,7 +219,7 @@
 			files = (
 				E452F2DC210A400F00905C1F /* Global.swift in Sources */,
 				E452F2E2210A450C00905C1F /* TVSUITestCases.swift in Sources */,
-				E452F2E0210A438A00905C1F /* Pages.swift in Sources */,
+				E452F2E0210A438A00905C1F /* Category.swift in Sources */,
 				E452F2D4210A3F3400905C1F /* TVSUITestBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

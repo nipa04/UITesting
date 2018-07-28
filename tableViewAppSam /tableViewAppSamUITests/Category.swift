@@ -9,7 +9,7 @@
 import Foundation
 import XCTest
 
-class Table {
+class Category {
     static var tableOfIronMan : XCUIElement {
         return app.tables.staticTexts["Iron Man"]
     }
@@ -17,7 +17,7 @@ class Table {
         return app.tables.staticTexts["Spider Man"]
     }
     static var tableOfBatMan : XCUIElement {
-        return app.tables.staticTexts["BatMan"]
+        return app.tables.staticTexts["Batman"]
     }
     static var title : XCUIElement {
         return app.navigationBars["Movies"]
