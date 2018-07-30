@@ -15,7 +15,22 @@
 		197C21131C6686EF00BCCAE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197C21111C6686EF00BCCAE8 /* Main.storyboard */; };
 		197C21151C6686EF00BCCAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197C21141C6686EF00BCCAE8 /* Assets.xcassets */; };
 		197C21181C6686EF00BCCAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197C21161C6686EF00BCCAE8 /* LaunchScreen.storyboard */; };
+		E442AD39210F87AB00D396D5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442AD38210F87AB00D396D5 /* Product.swift */; };
+		E442AD3B210FA46300D396D5 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442AD3A210FA46300D396D5 /* ProductView.swift */; };
+		E49BB59B210F6DCE00EB23CD /* GAOPUITestsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BB59A210F6DCE00EB23CD /* GAOPUITestsBase.swift */; };
+		E49BB5A3210F6EA200EB23CD /* GAOPUITestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BB5A2210F6EA200EB23CD /* GAOPUITestCases.swift */; };
+		E49BB5A5210F6ECB00EB23CD /* GAOPGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BB5A4210F6ECB00EB23CD /* GAOPGlobal.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E49BB59D210F6DCE00EB23CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 197C21021C6686EE00BCCAE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 197C21091C6686EE00BCCAE8;
+			remoteInfo = GoodAsOldPhones;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		19155F481C6AB48B00644FDF /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
@@ -28,10 +43,24 @@
 		197C21141C6686EF00BCCAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		197C21171C6686EF00BCCAE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		197C21191C6686EF00BCCAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E442AD38210F87AB00D396D5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E442AD3A210FA46300D396D5 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		E49BB598210F6DCE00EB23CD /* GoodAsOldPhonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodAsOldPhonesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49BB59A210F6DCE00EB23CD /* GAOPUITestsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAOPUITestsBase.swift; sourceTree = "<group>"; };
+		E49BB59C210F6DCE00EB23CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49BB5A2210F6EA200EB23CD /* GAOPUITestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAOPUITestCases.swift; sourceTree = "<group>"; };
+		E49BB5A4210F6ECB00EB23CD /* GAOPGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAOPGlobal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		197C21071C6686EE00BCCAE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E49BB595210F6DCE00EB23CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				197C210C1C6686EE00BCCAE8 /* GoodAsOldPhones */,
+				E49BB599210F6DCE00EB23CD /* GoodAsOldPhonesUITests */,
 				197C210B1C6686EE00BCCAE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				197C210A1C6686EE00BCCAE8 /* GoodAsOldPhones.app */,
+				E49BB598210F6DCE00EB23CD /* GoodAsOldPhonesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +102,19 @@
 				197C21191C6686EF00BCCAE8 /* Info.plist */,
 			);
 			path = GoodAsOldPhones;
+			sourceTree = "<group>";
+		};
+		E49BB599210F6DCE00EB23CD /* GoodAsOldPhonesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E49BB5A4210F6ECB00EB23CD /* GAOPGlobal.swift */,
+				E49BB59A210F6DCE00EB23CD /* GAOPUITestsBase.swift */,
+				E49BB5A2210F6EA200EB23CD /* GAOPUITestCases.swift */,
+				E442AD38210F87AB00D396D5 /* Product.swift */,
+				E442AD3A210FA46300D396D5 /* ProductView.swift */,
+				E49BB59C210F6DCE00EB23CD /* Info.plist */,
+			);
+			path = GoodAsOldPhonesUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,19 +137,43 @@
 			productReference = 197C210A1C6686EE00BCCAE8 /* GoodAsOldPhones.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E49BB597210F6DCE00EB23CD /* GoodAsOldPhonesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E49BB5A1210F6DCE00EB23CD /* Build configuration list for PBXNativeTarget "GoodAsOldPhonesUITests" */;
+			buildPhases = (
+				E49BB594210F6DCE00EB23CD /* Sources */,
+				E49BB595210F6DCE00EB23CD /* Frameworks */,
+				E49BB596210F6DCE00EB23CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E49BB59E210F6DCE00EB23CD /* PBXTargetDependency */,
+			);
+			name = GoodAsOldPhonesUITests;
+			productName = GoodAsOldPhonesUITests;
+			productReference = E49BB598210F6DCE00EB23CD /* GoodAsOldPhonesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		197C21021C6686EE00BCCAE8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Code School";
 				TargetAttributes = {
 					197C21091C6686EE00BCCAE8 = {
 						CreatedOnToolsVersion = 7.2.1;
 						LastSwiftMigration = 0900;
+					};
+					E49BB597210F6DCE00EB23CD = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = C94WC52RNY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 197C21091C6686EE00BCCAE8;
 					};
 				};
 			};
@@ -123,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				197C21091C6686EE00BCCAE8 /* GoodAsOldPhones */,
+				E49BB597210F6DCE00EB23CD /* GoodAsOldPhonesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +204,13 @@
 				197C21181C6686EF00BCCAE8 /* LaunchScreen.storyboard in Resources */,
 				197C21151C6686EF00BCCAE8 /* Assets.xcassets in Resources */,
 				197C21131C6686EF00BCCAE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E49BB596210F6DCE00EB23CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +229,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E49BB594210F6DCE00EB23CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E442AD3B210FA46300D396D5 /* ProductView.swift in Sources */,
+				E49BB5A3210F6EA200EB23CD /* GAOPUITestCases.swift in Sources */,
+				E49BB5A5210F6ECB00EB23CD /* GAOPGlobal.swift in Sources */,
+				E49BB59B210F6DCE00EB23CD /* GAOPUITestsBase.swift in Sources */,
+				E442AD39210F87AB00D396D5 /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E49BB59E210F6DCE00EB23CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 197C21091C6686EE00BCCAE8 /* GoodAsOldPhones */;
+			targetProxy = E49BB59D210F6DCE00EB23CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		197C21111C6686EF00BCCAE8 /* Main.storyboard */ = {
@@ -301,6 +397,53 @@
 			};
 			name = Release;
 		};
+		E49BB59F210F6DCE00EB23CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94WC52RNY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = GoodAsOldPhonesUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Farjana-Nipa.GoodAsOldPhonesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodAsOldPhones;
+			};
+			name = Debug;
+		};
+		E49BB5A0210F6DCE00EB23CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94WC52RNY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = GoodAsOldPhonesUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Farjana-Nipa.GoodAsOldPhonesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodAsOldPhones;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -318,6 +461,15 @@
 			buildConfigurations = (
 				197C211D1C6686EF00BCCAE8 /* Debug */,
 				197C211E1C6686EF00BCCAE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E49BB5A1210F6DCE00EB23CD /* Build configuration list for PBXNativeTarget "GoodAsOldPhonesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49BB59F210F6DCE00EB23CD /* Debug */,
+				E49BB5A0210F6DCE00EB23CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
