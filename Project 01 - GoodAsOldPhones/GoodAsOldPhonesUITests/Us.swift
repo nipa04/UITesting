@@ -7,3 +7,25 @@
 //
 
 import Foundation
+import XCTest
+
+class Us {
+    
+    static var headerContactView : XCUIElement {
+        return GaopApplication.scrollViews.containing(.image, identifier: "header-contact").element
+    }
+    
+    static func tapHeaderContactView() {
+        headerContactView.tap()
+    }
+    
+    static func swipeUpHeaderContactView() {
+        headerContactView.swipeUp()
+    }
+    
+    static func swipeDownHeaderContactView() {
+        headerContactView.swipeDown()
+    }
+    
+}
+

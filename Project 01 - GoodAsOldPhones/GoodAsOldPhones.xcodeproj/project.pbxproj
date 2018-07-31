@@ -17,6 +17,7 @@
 		197C21181C6686EF00BCCAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197C21161C6686EF00BCCAE8 /* LaunchScreen.storyboard */; };
 		E442AD39210F87AB00D396D5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442AD38210F87AB00D396D5 /* Product.swift */; };
 		E442AD3B210FA46300D396D5 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442AD3A210FA46300D396D5 /* ProductView.swift */; };
+		E46CB2102110C8EF000AB5F0 /* Us.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB20F2110C8EF000AB5F0 /* Us.swift */; };
 		E49BB59B210F6DCE00EB23CD /* GAOPUITestsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BB59A210F6DCE00EB23CD /* GAOPUITestsBase.swift */; };
 		E49BB5A3210F6EA200EB23CD /* GAOPUITestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BB5A2210F6EA200EB23CD /* GAOPUITestCases.swift */; };
 		E49BB5A5210F6ECB00EB23CD /* GAOPGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BB5A4210F6ECB00EB23CD /* GAOPGlobal.swift */; };
@@ -45,6 +46,7 @@
 		197C21191C6686EF00BCCAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E442AD38210F87AB00D396D5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		E442AD3A210FA46300D396D5 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		E46CB20F2110C8EF000AB5F0 /* Us.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Us.swift; sourceTree = "<group>"; };
 		E49BB598210F6DCE00EB23CD /* GoodAsOldPhonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodAsOldPhonesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49BB59A210F6DCE00EB23CD /* GAOPUITestsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAOPUITestsBase.swift; sourceTree = "<group>"; };
 		E49BB59C210F6DCE00EB23CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				E49BB5A2210F6EA200EB23CD /* GAOPUITestCases.swift */,
 				E442AD38210F87AB00D396D5 /* Product.swift */,
 				E442AD3A210FA46300D396D5 /* ProductView.swift */,
+				E46CB20F2110C8EF000AB5F0 /* Us.swift */,
 				E49BB59C210F6DCE00EB23CD /* Info.plist */,
 			);
 			path = GoodAsOldPhonesUITests;
@@ -238,6 +241,7 @@
 				E49BB5A5210F6ECB00EB23CD /* GAOPGlobal.swift in Sources */,
 				E49BB59B210F6DCE00EB23CD /* GAOPUITestsBase.swift in Sources */,
 				E442AD39210F87AB00D396D5 /* Product.swift in Sources */,
+				E46CB2102110C8EF000AB5F0 /* Us.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
