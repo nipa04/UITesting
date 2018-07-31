@@ -8,4 +8,17 @@
 
 import Foundation
 import XCTest
-
+class ProductsView {
+    
+    static var backButton: XCUIElement {
+        return GaopApplication.navigationBars["GoodAsOldPhones.ProductView"].buttons["Back"]
+    }
+    
+    
+    static func tapBackButton() {
+        backButton.tap()
+    }
+    
+    
+    
+}

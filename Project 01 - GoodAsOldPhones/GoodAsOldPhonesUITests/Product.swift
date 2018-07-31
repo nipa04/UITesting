@@ -24,8 +24,8 @@ class Products {
          return GaopApplication.tables.staticTexts["1984 Moto Portable"]
     }
     
-    static var title: XCUIElement {
-        return GaopApplication.navigationBars.staticTexts["Back"]
+    static var Products: XCUIElement {
+        return GaopApplication.navigationBars["Back"]
     }
     
     static func tapWallSet() {
@@ -41,7 +41,7 @@ class Products {
          tableMotoPortable.tap()
     }
     static func pageLoaded() -> Bool {
-         return title.exists
+         return Products.exists
     }
     
 }

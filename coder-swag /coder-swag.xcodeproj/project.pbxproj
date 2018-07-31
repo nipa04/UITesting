@@ -152,20 +152,11 @@
 			isa = PBXGroup;
 			children = (
 				E4DD60832106D869000A611E /* Pages */,
-				E4DD607D210699FE000A611E /* Libary */,
 				E41E6A1C20FF8AF900A12349 /* CSUITestBase.swift */,
 				E4DD607B21062DBA000A611E /* HomePageTestCases.swift */,
 				E41E6A1E20FF8AF900A12349 /* Info.plist */,
 			);
 			path = "coder-swagUITests";
-			sourceTree = "<group>";
-		};
-		E4DD607D210699FE000A611E /* Libary */ = {
-			isa = PBXGroup;
-			children = (
-				E4DD607E21069A3F000A611E /* CSGlobal.swift */,
-			);
-			path = Libary;
 			sourceTree = "<group>";
 		};
 		E4DD60802106CFAE000A611E /* Utility */ = {
@@ -179,6 +170,7 @@
 		E4DD60832106D869000A611E /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				E4DD607E21069A3F000A611E /* CSGlobal.swift */,
 				E4DD60842106D87D000A611E /* Category.swift */,
 				E4DD60862106DB13000A611E /* Product.swift */,
 			);

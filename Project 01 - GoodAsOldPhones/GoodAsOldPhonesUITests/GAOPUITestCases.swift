@@ -14,37 +14,51 @@ class GAOPUITestCases: GAOPUITestsBase {
     func testWallSet() {
         Products.tapWallSet()
         let exits = Products.tableWallSet.exists
-        XCTAssertTrue(exits, "Doesn't exits" )
+        XCTAssertFalse(exits, "Does exits" )
 
-//        let app = XCUIApplication()
-//        app.tables/*@START_MENU_TOKEN@*/.staticTexts["1907 Wall Set"]/*[[".cells.staticTexts[\"1907 Wall Set\"]",".staticTexts[\"1907 Wall Set\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-//        app.navigationBars["GoodAsOldPhones.ProductView"].buttons["Back"].tap()
-//
     }
     
     func testDialPhone() {
         Products.tapDialPhone()
-        let exits = Products.tableDialPhone.exists
-        XCTAssertTrue(exits, "Doesn't exits")
+        //let exits = Products.tableDialPhone.exists
+        //XCTAssertTrue(exits, "Doesn't exits")
     }
     
     func testDeskSet() {
         Products.tapDeskSet()
-        let exits = Products.tableDeskSet.exists
-        XCTAssertTrue(exits, "Doesn't exits")
+        //let exits = Products.tableDeskSet.exists
+       // XCTAssertTrue(exits, "Doesn't exits")
     }
     func testMotoPortable() {
         Products.tapMotoPortable()
-        let exits = Products.tableMotoPortable.exists
-        XCTAssertTrue(exits, "Doesn't exits")
+       // let exits = Products.tableMotoPortable.exists
+       // XCTAssertTrue(exits, "Doesn't exits")
     }
     func testPageLoaded() {
-       Products.pageLoaded()
-        Products.tableDialPhone
-        XCTAssertTrue(Products.tapPageLoaded(), "Page is not loading")
+        Products.pageLoaded()
+        Products.tapWallSet()
+        XCTAssertFalse(Products.pageLoaded(), "Page is not loading")
     }
     
+    func testBackButton() {
+        Products.tapWallSet()
+        ProductsView.tapBackButton()
+    }
+    func testBackButton2() {
+        Products.tapDialPhone()
+        ProductsView.tapBackButton()
+    }
+    
+    func testBackButton3() {
+        Products.tapDeskSet()
+        ProductsView.tapBackButton()
+    }
+    func testBackBuuton3() {
+        Products.tapMotoPortable()
+        ProductsView.tapBackButton()
+    }
     func testExample() {
+        
         
         let app = XCUIApplication()
         let tablesQuery = app.tables
@@ -56,6 +70,9 @@ class GAOPUITestCases: GAOPUITestsBase {
         backButton.tap()
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["1937 Desk Set"]/*[[".cells.staticTexts[\"1937 Desk Set\"]",".staticTexts[\"1937 Desk Set\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         backButton.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["1984 Moto Portable"]/*[[".cells.staticTexts[\"1984 Moto Portable\"]",".staticTexts[\"1984 Moto Portable\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        backButton.tap()
+        
         
     }
     
