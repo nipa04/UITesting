@@ -13,32 +13,32 @@ class GAOPUITestCases: GAOPUITestsBase {
 
     func testWallSet() {
         Products.tapWallSet()
+        ProductsView.tapBackButton()
         let exits = Products.tableWallSet.exists
-        XCTAssertFalse(exits, "Does exits" )
+        XCTAssertTrue(exits, "Does exits" )
 
     }
     
     func testDialPhone() {
         Products.tapDialPhone()
-        //let exits = Products.tableDialPhone.exists
-        //XCTAssertTrue(exits, "Doesn't exits")
+        ProductsView.tapBackButton()
+        let exits = Products.tableDialPhone.exists
+        XCTAssertTrue(exits, "Doesn't exits")
     }
     
     func testDeskSet() {
         Products.tapDeskSet()
-        //let exits = Products.tableDeskSet.exists
-       // XCTAssertTrue(exits, "Doesn't exits")
+        ProductsView.tapBackButton()
+        let exits = Products.tableDeskSet.exists
+        XCTAssertTrue(exits, "Doesn't exits")
     }
     func testMotoPortable() {
         Products.tapMotoPortable()
-       // let exits = Products.tableMotoPortable.exists
-       // XCTAssertTrue(exits, "Doesn't exits")
+        ProductsView.tapBackButton()
+        let exits = Products.tableMotoPortable.exists
+        XCTAssertTrue(exits, "Doesn't exits")
     }
-    func testPageLoaded() {
-        Products.pageLoaded()
-        Products.tapWallSet()
-        XCTAssertFalse(Products.pageLoaded(), "Page is not loading")
-    }
+ 
     
     func testBackButton() {
         Products.tapWallSet()
@@ -57,22 +57,49 @@ class GAOPUITestCases: GAOPUITestsBase {
         Products.tapMotoPortable()
         ProductsView.tapBackButton()
     }
+    
+    func testTabBarProducts() {
+        Products.tapProducts()
+        
+        let exits =
+            Products.tableWallSet.exists
+        && Products.tableDialPhone.exists
+        && Products.tableDeskSet.exists
+        && Products.tableMotoPortable.exists
+        
+        XCTAssertTrue(exits, "Pages not exits")
+        
+        GaopApplication.terminate()
+    }
+    
+    func testTabBarUs() {
+        Products.tapUs()
+        GaopApplication/*@START_MENU_TOKEN@*/.scrollViews.containing(.image, identifier:"header-contact").element/*[[".scrollViews.containing(.staticText, identifier:\"www.example.com\").element",".scrollViews.containing(.image, identifier:\"icon-about-website\").element",".scrollViews.containing(.staticText, identifier:\"412-888-9028\").element",".scrollViews.containing(.image, identifier:\"icon-about-phone\").element",".scrollViews.containing(.staticText, identifier:\"good-as-old@example.com\").element",".scrollViews.containing(.image, identifier:\"icon-about-email\").element",".scrollViews.containing(.staticText, identifier:\"Contact\").element",".scrollViews.containing(.staticText, identifier:\"*Hands-free phones available\").element",".scrollViews.containing(.staticText, identifier:\"Whether you are looking for a turn-of-the-century wall set or a Zack Morris Special, we've got you covered. Give us a ring, and we will get you connected. \").element",".scrollViews.containing(.staticText, identifier:\"Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:\").element",".scrollViews.containing(.staticText, identifier:\"About Us\").element",".scrollViews.containing(.image, identifier:\"header-contact\").element"],[[[-1,11],[-1,10],[-1,9],[-1,8],[-1,7],[-1,6],[-1,5],[-1,4],[-1,3],[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
+        GaopApplication.scrollViews.containing(.image, identifier: "header-contact").element.swipeDown()
+    }
+    
+    
     func testExample() {
         
         
         let app = XCUIApplication()
-        let tablesQuery = app.tables
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["1907 Wall Set"]/*[[".cells.staticTexts[\"1907 Wall Set\"]",".staticTexts[\"1907 Wall Set\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let tabBarsQuery = app.tabBars
+        tabBarsQuery.buttons["Us"].tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts["About Us"]/*[[".scrollViews.staticTexts[\"About Us\"]",".staticTexts[\"About Us\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         
-        let backButton = app.navigationBars["GoodAsOldPhones.ProductView"].buttons["Back"]
-        backButton.tap()
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["1921 Dial Phone"]/*[[".cells.staticTexts[\"1921 Dial Phone\"]",".staticTexts[\"1921 Dial Phone\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        backButton.tap()
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["1937 Desk Set"]/*[[".cells.staticTexts[\"1937 Desk Set\"]",".staticTexts[\"1937 Desk Set\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        backButton.tap()
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["1984 Moto Portable"]/*[[".cells.staticTexts[\"1984 Moto Portable\"]",".staticTexts[\"1984 Moto Portable\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        backButton.tap()
-        
+        let headerContactScrollView = app/*@START_MENU_TOKEN@*/.scrollViews.containing(.image, identifier:"header-contact").element/*[[".scrollViews.containing(.staticText, identifier:\"www.example.com\").element",".scrollViews.containing(.image, identifier:\"icon-about-website\").element",".scrollViews.containing(.staticText, identifier:\"412-888-9028\").element",".scrollViews.containing(.image, identifier:\"icon-about-phone\").element",".scrollViews.containing(.staticText, identifier:\"good-as-old@example.com\").element",".scrollViews.containing(.image, identifier:\"icon-about-email\").element",".scrollViews.containing(.staticText, identifier:\"Contact\").element",".scrollViews.containing(.staticText, identifier:\"*Hands-free phones available\").element",".scrollViews.containing(.staticText, identifier:\"Whether you are looking for a turn-of-the-century wall set or a Zack Morris Special, we've got you covered. Give us a ring, and we will get you connected. \").element",".scrollViews.containing(.staticText, identifier:\"Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:\").element",".scrollViews.containing(.staticText, identifier:\"About Us\").element",".scrollViews.containing(.image, identifier:\"header-contact\").element"],[[[-1,11],[-1,10],[-1,9],[-1,8],[-1,7],[-1,6],[-1,5],[-1,4],[-1,3],[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        headerContactScrollView.tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts["Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:"]/*[[".scrollViews.staticTexts[\"Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:\"]",".staticTexts[\"Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts["Contact"]/*[[".scrollViews.staticTexts[\"Contact\"]",".staticTexts[\"Contact\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts["good-as-old@example.com"]/*[[".scrollViews.staticTexts[\"good-as-old@example.com\"]",".staticTexts[\"good-as-old@example.com\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        headerContactScrollView/*@START_MENU_TOKEN@*/.swipeLeft()/*[[".swipeUp()",".swipeLeft()"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        app/*@START_MENU_TOKEN@*/.staticTexts["www.example.com"]/*[[".scrollViews.staticTexts[\"www.example.com\"]",".staticTexts[\"www.example.com\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        headerContactScrollView.tap()
+        tabBarsQuery.buttons["Products"].tap()
+        app.tables/*@START_MENU_TOKEN@*/.staticTexts["1907 Wall Set"]/*[[".cells.staticTexts[\"1907 Wall Set\"]",".staticTexts[\"1907 Wall Set\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.tap()
+        app.buttons["button addtocart"].tap()
+        app.navigationBars["GoodAsOldPhones.ProductView"].buttons["Back"].tap()
         
     }
     
