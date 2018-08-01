@@ -18,7 +18,22 @@
 		A2D7F31D1C8CE44E0097399A /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7F31C1C8CE44E0097399A /* Artist.swift */; };
 		A2D7F31F1C8CE4640097399A /* ArtistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7F31E1C8CE4640097399A /* ArtistListViewController.swift */; };
 		A2D7F3261C8CE4A30097399A /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = A2D7F3201C8CE4A30097399A /* artists.json */; };
+		E46CB21821121800000AB5F0 /* ArtistryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB21721121800000AB5F0 /* ArtistryUITests.swift */; };
+		E46CB22021121866000AB5F0 /* ArtistryUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB21F21121866000AB5F0 /* ArtistryUITestCase.swift */; };
+		E46CB222211218E0000AB5F0 /* ArtistryGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB221211218E0000AB5F0 /* ArtistryGlobal.swift */; };
+		E46CB22421121A18000AB5F0 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB22321121A18000AB5F0 /* Artist.swift */; };
+		E46CB22621121A23000AB5F0 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46CB22521121A23000AB5F0 /* Work.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E46CB21A21121800000AB5F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2D7F2FD1C8CE3F60097399A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2D7F3041C8CE3F60097399A;
+			remoteInfo = Artistry;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		19E5B4B01E0CD9E1002036AC /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
@@ -34,10 +49,24 @@
 		A2D7F31C1C8CE44E0097399A /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		A2D7F31E1C8CE4640097399A /* ArtistListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistListViewController.swift; sourceTree = "<group>"; };
 		A2D7F3201C8CE4A30097399A /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
+		E46CB21521121800000AB5F0 /* ArtistryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtistryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46CB21721121800000AB5F0 /* ArtistryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistryUITests.swift; sourceTree = "<group>"; };
+		E46CB21921121800000AB5F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46CB21F21121866000AB5F0 /* ArtistryUITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistryUITestCase.swift; sourceTree = "<group>"; };
+		E46CB221211218E0000AB5F0 /* ArtistryGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistryGlobal.swift; sourceTree = "<group>"; };
+		E46CB22321121A18000AB5F0 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		E46CB22521121A23000AB5F0 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A2D7F3021C8CE3F60097399A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46CB21221121800000AB5F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				A2D7F3071C8CE3F60097399A /* Artistry */,
+				E46CB21621121800000AB5F0 /* ArtistryUITests */,
 				A2D7F3061C8CE3F60097399A /* Products */,
 			);
 			indentWidth = 2;
@@ -89,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				A2D7F3051C8CE3F60097399A /* Artistry.app */,
+				E46CB21521121800000AB5F0 /* ArtistryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +147,19 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		E46CB21621121800000AB5F0 /* ArtistryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E46CB221211218E0000AB5F0 /* ArtistryGlobal.swift */,
+				E46CB22321121A18000AB5F0 /* Artist.swift */,
+				E46CB22521121A23000AB5F0 /* Work.swift */,
+				E46CB21721121800000AB5F0 /* ArtistryUITests.swift */,
+				E46CB21F21121866000AB5F0 /* ArtistryUITestCase.swift */,
+				E46CB21921121800000AB5F0 /* Info.plist */,
+			);
+			path = ArtistryUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,19 +180,43 @@
 			productReference = A2D7F3051C8CE3F60097399A /* Artistry.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E46CB21421121800000AB5F0 /* ArtistryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46CB21E21121800000AB5F0 /* Build configuration list for PBXNativeTarget "ArtistryUITests" */;
+			buildPhases = (
+				E46CB21121121800000AB5F0 /* Sources */,
+				E46CB21221121800000AB5F0 /* Frameworks */,
+				E46CB21321121800000AB5F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E46CB21B21121800000AB5F0 /* PBXTargetDependency */,
+			);
+			name = ArtistryUITests;
+			productName = ArtistryUITests;
+			productReference = E46CB21521121800000AB5F0 /* ArtistryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A2D7F2FD1C8CE3F60097399A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = RayWenderlich;
 				TargetAttributes = {
 					A2D7F3041C8CE3F60097399A = {
 						CreatedOnToolsVersion = 7.2.1;
 						LastSwiftMigration = 0900;
+					};
+					E46CB21421121800000AB5F0 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = C94WC52RNY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A2D7F3041C8CE3F60097399A;
 					};
 				};
 			};
@@ -166,6 +234,7 @@
 			projectRoot = "";
 			targets = (
 				A2D7F3041C8CE3F60097399A /* Artistry */,
+				E46CB21421121800000AB5F0 /* ArtistryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +248,13 @@
 				A2D7F3101C8CE3F60097399A /* Assets.xcassets in Resources */,
 				A2D7F3261C8CE4A30097399A /* artists.json in Resources */,
 				A2D7F30E1C8CE3F60097399A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46CB21321121800000AB5F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +275,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E46CB21121121800000AB5F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46CB222211218E0000AB5F0 /* ArtistryGlobal.swift in Sources */,
+				E46CB21821121800000AB5F0 /* ArtistryUITests.swift in Sources */,
+				E46CB22621121A23000AB5F0 /* Work.swift in Sources */,
+				E46CB22421121A18000AB5F0 /* Artist.swift in Sources */,
+				E46CB22021121866000AB5F0 /* ArtistryUITestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E46CB21B21121800000AB5F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2D7F3041C8CE3F60097399A /* Artistry */;
+			targetProxy = E46CB21A21121800000AB5F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A2D7F30C1C8CE3F60097399A /* Main.storyboard */ = {
@@ -337,6 +433,65 @@
 			};
 			name = Release;
 		};
+		E46CB21C21121800000AB5F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94WC52RNY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ArtistryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Farjana-Nipa.ArtistryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artistry;
+			};
+			name = Debug;
+		};
+		E46CB21D21121800000AB5F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94WC52RNY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ArtistryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Farjana-Nipa.ArtistryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Artistry;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,6 +509,15 @@
 			buildConfigurations = (
 				A2D7F3181C8CE3F60097399A /* Debug */,
 				A2D7F3191C8CE3F60097399A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46CB21E21121800000AB5F0 /* Build configuration list for PBXNativeTarget "ArtistryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46CB21C21121800000AB5F0 /* Debug */,
+				E46CB21D21121800000AB5F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
