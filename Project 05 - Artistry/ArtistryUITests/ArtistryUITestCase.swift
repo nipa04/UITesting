@@ -11,8 +11,11 @@ import XCTest
 class ArtistryUITestCase: ArtistryUITestBase {
   
   func testPabloPicasso() {
-    Artist.tapPabloPicasso()
-    Work.tapBackButtonArtistryPabloPicasso()
+    ArtistX.tableOfPabloPicasso
+    
+    
+//    Artist.tapPabloPicasso()
+//    Work.tapBackButtonArtistryPabloPicasso()
   }
   
   func testVincentVanGogh() {
