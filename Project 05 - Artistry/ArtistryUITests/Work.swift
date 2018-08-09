@@ -9,6 +9,18 @@
 import Foundation
 import XCTest
 
+
+//enum WorkX {
+//  case backButtonArtistryPabloPiccsao
+//  case backButtonArtistryVincentGogh
+//  case backButtonArtistryFridaKahlo
+//  case backButtonArtistryGeorgiaKeeffe
+//  case backButtonArtistryAndyWarhol
+//  case backButtonArtistryLeonardoVinci
+//  case backButtonArtistryRembrandt
+//
+//}
+
 class Work {
   
   static var backButtonArtistryPabloPiccsao : XCUIElement {

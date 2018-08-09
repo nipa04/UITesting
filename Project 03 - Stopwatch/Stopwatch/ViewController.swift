@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate {
   @IBOutlet weak var lapRestButton: UIButton!
   @IBOutlet weak var lapsTableView: UITableView!
   
-  override func viewDidLoad() {
+    override func viewDidLoad() {
     super.viewDidLoad()
     initCircleButton(playPauseButton)
     initCircleButton(lapRestButton)
@@ -37,8 +37,10 @@ class ViewController: UIViewController, UITableViewDelegate {
     
     lapsTableView.delegate = self;
     lapsTableView.dataSource = self;
-  }
-  
+//
+//    self.playPauseButton.accessibilityIdentifier = AccessibilityIdentifier.startButton.rawValue
+//    self.lapRestButton.accessibilityIdentifier   = AccessibilityIdentifier.lapButton.rawValue
+
   fileprivate func initCircleButton(_ button: UIButton) {
     button.layer.cornerRadius = 0.5 * button.bounds.size.width
     button.backgroundColor = UIColor.white
@@ -50,7 +52,7 @@ class ViewController: UIViewController, UITableViewDelegate {
   }
   
   // MARK: play, pause, lap, and reset
-  @IBAction func playPauseTimer(_ sender: AnyObject) {
+    @IBAction func playPauseTimer(_ sender: AnyObject) {
     lapRestButton.isEnabled = true
     changeButton(lapRestButton, title: "Lap", titleColor: UIColor.black)
     if !isPlay {
