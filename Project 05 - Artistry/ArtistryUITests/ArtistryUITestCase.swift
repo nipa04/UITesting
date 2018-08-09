@@ -11,37 +11,64 @@ import XCTest
 class ArtistryUITestCase: ArtistryUITestBase {
   
   func testPabloPicasso() {
-//    ArtistX.tableOfPabloPicasso
-    Artist.tapPabloPicasso()
-    Work.tapBackButtonArtistryPabloPicasso()
+      Artist.tapPabloPicasso()
+      Work.tapBackButtonArtistryPabloPiccsao()
+      let exits = ArtistX.tableOfPabloPicasso.elementExist
+      XCTAssertTrue( exits, "Does not exists")
+    
+//    Artist.tapPabloPicasso()
+//    Work.tapBackButtonArtistryPabloPicasso()
   }
   
   func testVincentVanGogh() {
     Artist.tapVincentVanGogh()
+    let exits = WorkX.backButtonArtistryVincentGogh.elementExists
+    XCTAssertTrue(exits , "Does not Exits")
     Work.tapBackButtonArtistryVincentGogh()
+    
+//    let exits = WorkX.backButtonArtistryVincentGogh.elementExists
+//    XCTAssertTrue(exits , "Does not Exits")
+    
+//    Artist.tapVincentVanGogh()
+//    Work.tapBackButtonArtistryVincentGogh()
   }
   
   func testFridaKahlo() {
-    Artist.tapFridakahlo()
-    Work.tapBackButtonArtistryFridakahlo()
+    Artist.tapFridaKahlo()
+    Work.tapbackButtonArtistryFridaKahlo()
+    
+//    Artist.tapFridakahlo()
+//    Work.tapBackButtonArtistryFridakahlo()
   }
   
   func testGeorgiaKeeffe() {
     Artist.tapGeorgiaKeeffe()
-    Work.tapBackButtonArtistryGeorgiakeeffe()
+    Work.tabBackButtonArtistryGeorgiaKeeffe()
+    
+//    Artist.tapGeorgiaKeeffe()
+//    Work.tapBackButtonArtistryGeorgiakeeffe()
   }
   func testAndyWarhol() {
     Artist.tapAndyWarhol()
-    Work.tapBackButtonArtistryAndyWarhol()
+    Work.tapbackButtonArtistryAndyWarhol()
+    
+//    Artist.tapAndyWarhol()
+//    Work.tapBackButtonArtistryAndyWarhol()
   }
   func testLeonardoVinci() {
     Artist.tapLeonardoVinci()
     Work.tapBackButtonArtistryLeonardoVinci()
+    
+//    Artist.tapLeonardoVinci()
+//    Work.tapBackButtonArtistryLeonardoVinci()
   }
   
   func testRembrandt() {
     Artist.tapRembrandt()
-    Work.tapBackButtonArtistryRembrandt()
+    Work.tapbackButtonArtistryRembrandt()
+    
+//    Artist.tapRembrandt()
+//    Work.tapBackButtonArtistryRembrandt()
   }
   
   func testExample() {
@@ -57,8 +84,7 @@ class ArtistryUITestCase: ArtistryUITestBase {
     theWeepingWomanStaticText.swipeUp()
     theWeepingWomanStaticText.tap()
     theWeepingWomanStaticText.tap()
-  
-           
+
   }
     
 }

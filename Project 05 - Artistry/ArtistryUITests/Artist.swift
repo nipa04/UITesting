@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 
 // TEST DESIGN 2 //
-/*
+
 protocol UIElement {
   var identifier:   String { get }
   var xcComponent:  XCUIElement { get }
@@ -28,10 +28,7 @@ enum ArtistX {
 }
 
 extension ArtistX: UIElement {
-  var elementExist: Bool {
-    return self.xcComponent.waitForExistence(timeout: 5)
-  }
-  
+ 
   var identifier: String {
     switch self {
     case .tableOfPabloPicasso:
@@ -69,60 +66,90 @@ extension ArtistX: UIElement {
       return ArtistryApplication.tables.staticTexts[self.identifier]
     }
   }
+  
+  var elementExist: Bool {
+    return self.xcComponent.waitForExistence(timeout: 5)
+  }
+  
 }
-*/
+
+class Artist {
+  static func tapPabloPicasso() {
+    ArtistX.tableOfPabloPicasso.xcComponent.tap()
+  }
+  static func tapVincentVanGogh(){
+    ArtistX.tableOfVincentVanGogh.xcComponent.tap()
+  }
+  static func tapFridaKahlo() {
+    ArtistX.tableOfFridaKahlo.xcComponent.tap()
+  }
+  static func tapGeorgiaKeeffe() {
+    ArtistX.tableOfGeorgiaKeeffe.xcComponent.tap()
+  }
+  static func tapAndyWarhol() {
+    ArtistX.tableOfAndyWarhol.xcComponent.tap()
+  }
+  static func tapLeonardoVinci() {
+    ArtistX.tableOfLeonardoVinci.xcComponent.tap()
+  }
+  static func tapRembrandt() {
+    ArtistX.tableOfRembrandt.xcComponent.tap()
+  }
+  
+}
+
 
 // TEST DESIGN 1 //
 
-class Artist {
-
-  static var tableOfPabloPicasso : XCUIElement {
-    return ArtistryApplication.tables.staticTexts["Pablo Picasso"]
-  }
-  static var tableOfVincentVanGogh: XCUIElement {
-    return ArtistryApplication.tables.cells.containing(.staticText, identifier: "Vincent van Gogh").element
-    //return ArtistryApplication.tables.staticTexts["Vincent van Gogh"]
-  }
-  static var tableOfFridaKahlo: XCUIElement {
-    return ArtistryApplication.tables.staticTexts["Frida Kahlo"]
-  }
-  static var tableOfGeorgiaKeeffe: XCUIElement {
-    return ArtistryApplication.tables.staticTexts["Georgia O'Keeffe"]
-  }
-  static var tableOfAndyWarhol: XCUIElement {
-    return ArtistryApplication.tables.staticTexts["Andy Warhol"]
-  }
-  static var tableOfLeonardoVinci: XCUIElement {
-    return ArtistryApplication.tables.staticTexts["Leonardo da Vinci"]
-  }
-  static var tableOfRembrandt: XCUIElement {
-    return ArtistryApplication.tables.staticTexts["Rembrandt"]
-  }
-
-
-
-  static func tapPabloPicasso() {
-    tableOfPabloPicasso.tap()
-  }
-  static func tapVincentVanGogh() {
-      tableOfVincentVanGogh.tap()
-  }
-  static func tapFridakahlo() {
-    tableOfFridaKahlo.tap()
-  }
-  static func tapGeorgiaKeeffe() {
-    tableOfGeorgiaKeeffe.tap()
-  }
-  static func tapAndyWarhol() {
-    tableOfAndyWarhol.tap()
-  }
-  static func tapLeonardoVinci() {
-    tableOfLeonardoVinci.tap()
-  }
-  static func tapRembrandt() {
-    tableOfRembrandt.tap()
-  }
-}
-
+//class Artist {
+//
+//  static var tableOfPabloPicasso : XCUIElement {
+//    return ArtistryApplication.tables.staticTexts["Pablo Picasso"]
+//  }
+//  static var tableOfVincentVanGogh: XCUIElement {
+//    return ArtistryApplication.tables.cells.containing(.staticText, identifier: "Vincent van Gogh").element
+//    //return ArtistryApplication.tables.staticTexts["Vincent van Gogh"]
+//  }
+//  static var tableOfFridaKahlo: XCUIElement {
+//    return ArtistryApplication.tables.staticTexts["Frida Kahlo"]
+//  }
+//  static var tableOfGeorgiaKeeffe: XCUIElement {
+//    return ArtistryApplication.tables.staticTexts["Georgia O'Keeffe"]
+//  }
+//  static var tableOfAndyWarhol: XCUIElement {
+//    return ArtistryApplication.tables.staticTexts["Andy Warhol"]
+//  }
+//  static var tableOfLeonardoVinci: XCUIElement {
+//    return ArtistryApplication.tables.staticTexts["Leonardo da Vinci"]
+//  }
+//  static var tableOfRembrandt: XCUIElement {
+//    return ArtistryApplication.tables.staticTexts["Rembrandt"]
+//  }
+//
+//
+//
+//  static func tapPabloPicasso() {
+//    tableOfPabloPicasso.tap()
+//  }
+//  static func tapVincentVanGogh() {
+//      tableOfVincentVanGogh.tap()
+//  }
+//  static func tapFridakahlo() {
+//    tableOfFridaKahlo.tap()
+//  }
+//  static func tapGeorgiaKeeffe() {
+//    tableOfGeorgiaKeeffe.tap()
+//  }
+//  static func tapAndyWarhol() {
+//    tableOfAndyWarhol.tap()
+//  }
+//  static func tapLeonardoVinci() {
+//    tableOfLeonardoVinci.tap()
+//  }
+//  static func tapRembrandt() {
+//    tableOfRembrandt.tap()
+//  }
 //}
+//
+////}
 
