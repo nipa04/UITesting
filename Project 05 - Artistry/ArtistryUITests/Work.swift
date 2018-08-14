@@ -9,7 +9,7 @@
 import Foundation
 import XCTest
 
-protocol BackButton {
+protocol UITestableElement {
   var identifier : String { get }
   var xcComponent : XCUIElement { get }
   var elementExists : Bool { get }
@@ -26,7 +26,7 @@ enum WorkX {
 
 }
 
-extension WorkX : BackButton {
+extension WorkX : UITestableElement {
 
   var identifier: String {
     switch self {
@@ -47,7 +47,6 @@ extension WorkX : BackButton {
       
     }
   }
-  
     var xcComponent: XCUIElement {
       switch self {
       case .backButtonArtistryPabloPiccsao:
@@ -95,7 +94,6 @@ class Work {
   static func tapbackButtonArtistryRembrandt(){
     WorkX.backButtonArtistryRembrandt.xcComponent.tap()
   }
-  
 }
 
 //class Work {

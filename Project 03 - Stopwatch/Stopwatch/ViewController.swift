@@ -29,14 +29,15 @@ class ViewController: UIViewController, UITableViewDelegate {
   @IBOutlet weak var lapsTableView: UITableView!
   
     override func viewDidLoad() {
-    super.viewDidLoad()
-    initCircleButton(playPauseButton)
-    initCircleButton(lapRestButton)
-  
-    lapRestButton.isEnabled = false
-    
-    lapsTableView.delegate = self;
-    lapsTableView.dataSource = self;
+        super.viewDidLoad()
+        initCircleButton(playPauseButton)
+        initCircleButton(lapRestButton)
+      
+        lapRestButton.isEnabled = false
+        
+        lapsTableView.delegate = self;
+        lapsTableView.dataSource = self;
+    }
 //
 //    self.playPauseButton.accessibilityIdentifier = AccessibilityIdentifier.startButton.rawValue
 //    self.lapRestButton.accessibilityIdentifier   = AccessibilityIdentifier.lapButton.rawValue

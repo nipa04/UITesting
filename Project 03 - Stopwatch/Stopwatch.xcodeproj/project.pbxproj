@@ -96,7 +96,6 @@
 				197BEE2C1C798B47005AD5E2 /* Stopwatch.swift */,
 				197BEE1C1C76E410005AD5E2 /* Main.storyboard */,
 				197BEE1F1C76E410005AD5E2 /* Assets.xcassets */,
-				197BEE211C76E410005AD5E2 /* LaunchScreen.storyboard */,
 				197BEE241C76E410005AD5E2 /* Info.plist */,
 			);
 			path = Stopwatch;
@@ -118,6 +117,7 @@
 		E4F3FAF5211BF2E000DE4CFE /* StopwatchCommon */ = {
 			isa = PBXGroup;
 			children = (
+				197BEE211C76E410005AD5E2 /* LaunchScreen.storyboard */,
 				E4F3FAF6211BF32C00DE4CFE /* AccessiblityIdentifier.swift */,
 			);
 			path = StopwatchCommon;

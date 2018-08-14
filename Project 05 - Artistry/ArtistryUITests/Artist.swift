@@ -17,7 +17,7 @@ protocol UIElement {
   var elementExist: Bool { get }
 }
 
-enum ArtistX {
+enum ArtistX: String {
   case tableOfPabloPicasso
   case tableOfVincentVanGogh
   case tableOfFridaKahlo
@@ -75,7 +75,11 @@ extension ArtistX: UIElement {
 
 class Artist {
   static func tapPabloPicasso() {
-    ArtistX.tableOfPabloPicasso.xcComponent.tap()
+    ArtistX
+      .tableOfPabloPicasso
+      .xcComponent
+      .whenPresent()
+      .tap()
   }
   static func tapVincentVanGogh(){
     ArtistX.tableOfVincentVanGogh.xcComponent.tap()
