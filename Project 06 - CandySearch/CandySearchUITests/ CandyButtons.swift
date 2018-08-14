@@ -1,5 +1,5 @@
 //
-//  CandySearchUITestsCases.swift
+//  Buttons.swift
 //  CandySearchUITests
 //
 //  Created by iOS developer on 8/14/18.
@@ -9,13 +9,11 @@
 import Foundation
 import XCTest
 
-class CandySearchUITestsCases : CandySearchUITestsBase {
-    
-func testExample() {
-    
-    
-   
+protocol UIButton {
+    var Buttons: XCUIElement {get}
 }
-    
-    
+
+enum Buttons {
+    case allButton
+    case 
 }
