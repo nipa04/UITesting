@@ -9,17 +9,17 @@
 import Foundation
 import XCTest
 
-enum CandyType : String {
-    case backButtonChocolateBar = "Chocolate Bar"
-    case backButoonChocolateChip = "Chocolate Chip"
-    case backButtonDarkChocolate = "Dark Chocolate"
-    case backButtonLollipop = "Lollipop"
-    case backButtonCandyCane = "Candy Cane"
-    case backButtonJawBreaker = "Jaw Breaker"
-    case backButtonCaramel = "Caramel"
-    case backButtonSourChew = "Sour Chew"
-    case backButtonGummiBear = "Gummi Bear"
-}
+//enum CandyType : String {
+//    case backButtonChocolateBar = "Chocolate Bar"
+//    case backButoonChocolateChip = "Chocolate Chip"
+//    case backButtonDarkChocolate = "Dark Chocolate"
+//    case backButtonLollipop = "Lollipop"
+//    case backButtonCandyCane = "Candy Cane"
+//    case backButtonJawBreaker = "Jaw Breaker"
+//    case backButtonCaramel = "Caramel"
+//    case backButtonSourChew = "Sour Chew"
+//    case backButtonGummiBear = "Gummi Bear"
+//}
 
 extension CandyType: XCUIIdentifiable  {
     

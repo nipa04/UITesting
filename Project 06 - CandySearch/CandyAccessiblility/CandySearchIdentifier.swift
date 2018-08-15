@@ -20,3 +20,24 @@ enum CandySearchIdentifier: String {
     case tableOfGummiBear       = "GummiBear"
     
 }
+
+enum CandyButtons : String {
+    
+    case allButton = "All"
+    case chocolateButton =  "Chocolate"
+    case hardButton = "Hard"
+    case otherButton = "Other"
+    case cancelButton = "Cancel"
+}
+
+enum CandyType : String {
+    case backButtonChocolateBar = "Chocolate Bar"
+    case backButoonChocolateChip = "Chocolate Chip"
+    case backButtonDarkChocolate = "Dark Chocolate"
+    case backButtonLollipop = "Lollipop"
+    case backButtonCandyCane = "Candy Cane"
+    case backButtonJawBreaker = "Jaw Breaker"
+    case backButtonCaramel = "Caramel"
+    case backButtonSourChew = "Sour Chew"
+    case backButtonGummiBear = "Gummi Bear"
+}

@@ -54,14 +54,14 @@ class CandySearch {
 }
 
 
-enum CandyButtons : String {
-    
-    case allButton = "All"
-    case chocolateButton =  "Chocolate"
-    case hardButton = "Hard"
-    case otherButton = "Other"
-    case cancelButton = "Cancel"
-}
+//enum CandyButtons : String {
+//    
+//    case allButton = "All"
+//    case chocolateButton =  "Chocolate"
+//    case hardButton = "Hard"
+//    case otherButton = "Other"
+//    case cancelButton = "Cancel"
+//}
 
 extension CandyButtons: XCUIIdentifiable {
     
