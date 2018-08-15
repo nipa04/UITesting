@@ -50,8 +50,8 @@ class CandySearchUITestsCases : CandySearchUITestsBase {
     
     func testOtherButton() {
         CandyButtonsView.tapOtherButton()
-        let exits = CandySearchIdentifier.tableOfCandyCane.elementExits
-        XCTAssertFalse(exits ,"The page Exists")
+        let exits = CandySearchIdentifier.tableOfSourChew.elementExits
+        XCTAssertTrue(exits ,"Does not exits")
         
     }
     
