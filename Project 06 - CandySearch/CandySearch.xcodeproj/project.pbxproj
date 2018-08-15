@@ -16,10 +16,11 @@
 		171E0CAE1B8E5C58001E6242 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* Candy.swift */; };
 		E4D7944E21233E0400E0E278 /* CandySearchUITestsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7944D21233E0400E0E278 /* CandySearchUITestsBase.swift */; };
 		E4D7945621233E3300E0E278 /* CandySearchUITestsCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7945521233E3300E0E278 /* CandySearchUITestsCases.swift */; };
-		E4D7945821233F2000E0E278 /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7945721233F2000E0E278 /* global.swift */; };
-		E4D7945A2123457600E0E278 /* CandyChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D794592123457600E0E278 /* CandyChoice.swift */; };
-		E4D7945C2123459300E0E278 /* CandyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7945B2123459300E0E278 /* CandyView.swift */; };
-		E4D7945E21235FA900E0E278 /*  CandyButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7945D21235FA900E0E278 /*  CandyButtons.swift */; };
+		E4D7945821233F2000E0E278 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7945721233F2000E0E278 /* Global.swift */; };
+		E4D7945A2123457600E0E278 /* CandySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D794592123457600E0E278 /* CandySearchView.swift */; };
+		E4D7945C2123459300E0E278 /* CandyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D7945B2123459300E0E278 /* CandyDetailView.swift */; };
+		E4FC3A5F2123D59F0065B63F /* CandySearchIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FC3A5E2123D59F0065B63F /* CandySearchIdentifier.swift */; };
+		E4FC3A602123D59F0065B63F /* CandySearchIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FC3A5E2123D59F0065B63F /* CandySearchIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +47,10 @@
 		E4D7944D21233E0400E0E278 /* CandySearchUITestsBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchUITestsBase.swift; sourceTree = "<group>"; };
 		E4D7944F21233E0400E0E278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4D7945521233E3300E0E278 /* CandySearchUITestsCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchUITestsCases.swift; sourceTree = "<group>"; };
-		E4D7945721233F2000E0E278 /* global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
-		E4D794592123457600E0E278 /* CandyChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyChoice.swift; sourceTree = "<group>"; };
-		E4D7945B2123459300E0E278 /* CandyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyView.swift; sourceTree = "<group>"; };
-		E4D7945D21235FA900E0E278 /*  CandyButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " CandyButtons.swift"; sourceTree = "<group>"; };
+		E4D7945721233F2000E0E278 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		E4D794592123457600E0E278 /* CandySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchView.swift; sourceTree = "<group>"; };
+		E4D7945B2123459300E0E278 /* CandyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyDetailView.swift; sourceTree = "<group>"; };
+		E4FC3A5E2123D59F0065B63F /* CandySearchIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandySearchIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				171E0C7C1B8E5B84001E6242 /* CandySearch */,
+				E4FC3A5D2123D4EE0065B63F /* CandyAccessiblility */,
 				E4D7944C21233E0400E0E278 /* CandySearchUITests */,
 				171E0C7B1B8E5B84001E6242 /* Products */,
 			);
@@ -106,15 +108,22 @@
 		E4D7944C21233E0400E0E278 /* CandySearchUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E4D7945721233F2000E0E278 /* global.swift */,
-				E4D794592123457600E0E278 /* CandyChoice.swift */,
-				E4D7945D21235FA900E0E278 /*  CandyButtons.swift */,
-				E4D7945B2123459300E0E278 /* CandyView.swift */,
+				E4D7945721233F2000E0E278 /* Global.swift */,
+				E4D794592123457600E0E278 /* CandySearchView.swift */,
+				E4D7945B2123459300E0E278 /* CandyDetailView.swift */,
 				E4D7944D21233E0400E0E278 /* CandySearchUITestsBase.swift */,
 				E4D7945521233E3300E0E278 /* CandySearchUITestsCases.swift */,
 				E4D7944F21233E0400E0E278 /* Info.plist */,
 			);
 			path = CandySearchUITests;
+			sourceTree = "<group>";
+		};
+		E4FC3A5D2123D4EE0065B63F /* CandyAccessiblility */ = {
+			isa = PBXGroup;
+			children = (
+				E4FC3A5E2123D59F0065B63F /* CandySearchIdentifier.swift */,
+			);
+			path = CandyAccessiblility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +232,7 @@
 			files = (
 				171E0C821B8E5B84001E6242 /* DetailViewController.swift in Sources */,
 				171E0CAE1B8E5C58001E6242 /* Candy.swift in Sources */,
+				E4FC3A5F2123D59F0065B63F /* CandySearchIdentifier.swift in Sources */,
 				171E0C801B8E5B84001E6242 /* MasterViewController.swift in Sources */,
 				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,
 			);
@@ -232,11 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D7945821233F2000E0E278 /* global.swift in Sources */,
-				E4D7945A2123457600E0E278 /* CandyChoice.swift in Sources */,
+				E4D7945821233F2000E0E278 /* Global.swift in Sources */,
+				E4D7945A2123457600E0E278 /* CandySearchView.swift in Sources */,
 				E4D7944E21233E0400E0E278 /* CandySearchUITestsBase.swift in Sources */,
-				E4D7945E21235FA900E0E278 /*  CandyButtons.swift in Sources */,
-				E4D7945C2123459300E0E278 /* CandyView.swift in Sources */,
+				E4FC3A602123D59F0065B63F /* CandySearchIdentifier.swift in Sources */,
+				E4D7945C2123459300E0E278 /* CandyDetailView.swift in Sources */,
 				E4D7945621233E3300E0E278 /* CandySearchUITestsCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

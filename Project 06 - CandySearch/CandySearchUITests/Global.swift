@@ -10,3 +10,9 @@ import Foundation
 import XCTest
 
 let CandySearchApp = XCUIApplication()
+
+protocol XCUIIdentifiable {
+    var identifier : String {get}
+    var element: XCUIElement {get}
+    var elementExits : Bool {get}
+}

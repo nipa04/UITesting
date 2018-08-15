@@ -11,7 +11,16 @@ import XCTest
 
 class CandySearchUITestsCases : CandySearchUITestsBase {
     
+    func testTableChocolateBar() {
+    }
+    
+    func testAllButton() {
+        
+    }
+
+    
 func testExample() {
+    
     
     
    
