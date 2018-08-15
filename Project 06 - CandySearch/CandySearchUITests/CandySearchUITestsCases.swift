@@ -45,6 +45,14 @@ class CandySearchUITestsCases : CandySearchUITestsBase {
         CandyButtonsView.tapAllButton()
         searchField.typeText("All")
         CandyButtonsView.tapCancelButton()
+        
+    }
+    
+    func testOtherButton() {
+        CandyButtonsView.tapOtherButton()
+        let exits = CandySearchIdentifier.tableOfCandyCane.elementExits
+        XCTAssertFalse(exits ,"The page Exists")
+        
     }
     
     func testHardButton() {
