@@ -55,6 +55,7 @@ class CandySearch {
 
 
 enum CandyButtons : String {
+    
     case allButton = "All"
     case chocolateButton =  "Chocolate"
     case hardButton = "Hard"
@@ -77,7 +78,8 @@ extension CandyButtons: XCUIIdentifiable {
     }
 }
 
-class CandyViewButtons {
+class CandyButtonsView {
+    
     static func tapAllButton() {
         CandyButtons.allButton.element.tap()
     }

@@ -23,17 +23,33 @@ enum CandyType : String {
 
 extension CandyType: XCUIIdentifiable  {
     
-    
     var identifier: String {
         return self.rawValue
     }
-
     
     var element : XCUIElement {
-        CandySearchApp.navigationBars["Chocolate"].buttons["Back"]
+        switch self {
+        case .backButtonChocolateBar:
+            fallthrough
+        case .backButoonChocolateChip:
+            fallthrough
+        case .backButtonDarkChocolate:
+            return CandySearchApp.navigationBars["Chocolate"].buttons["Back"]
+        case .backButtonLollipop:
+            fallthrough
+        case .backButtonCandyCane:
+            fallthrough
+        case .backButtonJawBreaker:
+            return CandySearchApp.navigationBars["Hard"].buttons["Back"]
+        case .backButtonCaramel:
+            fallthrough
+        case .backButtonSourChew:
+            fallthrough
+        case .backButtonGummiBear:
+            return CandySearchApp.navigationBars["Other"].buttons["Back"]
+        }
     }
 
-    
     var elementExits: Bool {
         return self.element.waitForExistence(timeout: 5)
     }
