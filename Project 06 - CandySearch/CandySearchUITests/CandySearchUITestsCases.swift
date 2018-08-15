@@ -40,11 +40,18 @@ class CandySearchUITestsCases : CandySearchUITestsBase {
     }
     
     func testAllButton() {
+        let searchField = CandySearchApp.searchFields["Search"]
+        searchField.tap()
         CandyButtonsView.tapAllButton()
+        searchField.typeText("All")
+        CandyButtonsView.tapCancelButton()
     }
     
     func testHardButton() {
         CandyButtonsView.tapHardButton()
+        let searchField = CandySearchApp.searchFields["Search"]
+        searchField.tap()
+        searchField.typeText("BLAHBLAH")
     }
     
     func testCancelButton() {
