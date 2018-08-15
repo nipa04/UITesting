@@ -48,6 +48,9 @@ class CandySearchUITestsCases : CandySearchUITestsBase {
     }
     
     func testCancelButton() {
+        let searchField = CandySearchApp.searchFields["Search"]
+        searchField.tap()
+        searchField.typeText("Hard")
         CandyButtonsView.tapCancelButton()
         let exits = CandySearchIdentifier.tableOfCaramel.elementExits
         XCTAssertTrue(exits, "Not Exits")
@@ -56,8 +59,13 @@ class CandySearchUITestsCases : CandySearchUITestsBase {
     
 func testExample() {
     
-    
-    
+    let app = XCUIApplication()
+    let searchSearchField = app.searchFields["Search"]
+    searchSearchField.tap()
+    searchSearchField.typeText("fdheffr")
+    app.typeText("\r")
+    app.buttons["Cancel"].tap()
+    XCUIApplication().navigationBars["Master"].staticTexts.containing(.image, identifier:"Inline-Logo").element.tap()
    
 }
     
