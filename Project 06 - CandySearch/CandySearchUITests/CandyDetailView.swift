@@ -45,34 +45,33 @@ extension CandyType: XCUIIdentifiable  {
 }
     
 class CandyDetailView {
-    static func backButtonChocolateBar() {
+    static func tapBackButtonChocolateBar() {
        CandyType.backButtonChocolateBar.element.tap()
     }
-    static func backButtonChocolateChip() {
+    static func tapBackButtonChocolateChip() {
         CandyType.backButoonChocolateChip.element.tap()
     }
-    static func backButtonDarkChocolate() {
+    static func tapBackButtonDarkChocolate() {
         CandyType.backButtonDarkChocolate.element.tap()
     }
-    
-    static func backButtonLollipop() {
+    static func tapBackButtonLollipop() {
        CandyType.backButtonLollipop.element.tap()
     }
-    static func backButtonCandyCane() {
+    static func tapBackButtonCandyCane() {
         CandyType.backButtonCandyCane.element.tap()
     }
-    static func backButtonJawBreaker() {
+    static func tapBackButtonJawBreaker() {
         CandyType.backButtonJawBreaker.element.tap()
     }
     
-    static func backButtonCaramel() {
+    static func tapBackButtonCaramel() {
         CandyType.backButtonCaramel.element.tap()
     }
     
-    static func backButtonSourChew() {
+    static func tapBackButtonSourChew() {
         CandyType.backButtonSourChew.element.tap()
     }
-    static func backButtonGummiBear() {
+    static func tapBackButtonGummiBear() {
         CandyType.backButtonGummiBear.element.tap()
     }
 }

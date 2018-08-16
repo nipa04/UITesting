@@ -22,7 +22,6 @@ enum CandySearchIdentifier: String {
 }
 
 enum CandyButtons : String {
-    
     case allButton = "All"
     case chocolateButton =  "Chocolate"
     case hardButton = "Hard"

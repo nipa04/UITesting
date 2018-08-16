@@ -15,28 +15,50 @@ class CandySearchUITestsCases : CandySearchUITestsBase {
         let exists = CandySearchIdentifier.tableOfChocolateBar.elementExits
         XCTAssertTrue( exists, "Does not exits")
         CandySearch.tapChocolateBar()
-        CandyDetailView.backButtonChocolateBar()
+        CandyDetailView.tapBackButtonChocolateBar()
      
     }
     
     func testTableOfChocolateChip() {
         CandySearch.tapChocolateChip()
-        CandyDetailView.backButtonChocolateChip()
+        CandyDetailView.tapBackButtonChocolateChip()
     }
     
     func testTableOfDarkChocolate() {
         CandySearch.tapDarkChocolate()
-        CandyDetailView.backButtonDarkChocolate()
+        CandyDetailView.tapBackButtonDarkChocolate()
     }
     
     func testTableOfLollipop() {
         CandySearch.tapLollipop()
-        CandyDetailView.backButtonLollipop()
+        CandyDetailView.tapBackButtonLollipop()
     }
     
-    func tesrTableOfSourChew() {
+    func testTableOfSourChew() {
         CandySearch.tapSourChew()
-        CandyDetailView.backButtonSourChew()
+        CandyDetailView.tapBackButtonSourChew()
+    }
+    
+    func testTableOfCaramel() {
+        CandySearch.tapCaramel()
+        let exits = CandyType.backButtonCaramel.elementExits
+        XCTAssertTrue(exits, "Does not exits")
+    }
+    
+    func testTableOfGummiBear() {
+        CandySearch.tapGummiBear()
+        CandyDetailView.tapBackButtonGummiBear()
+
+    }
+    
+    func testTableOfCandyCane() {
+        CandySearch.tapCandyCane()
+        CandyDetailView.tapBackButtonCandyCane()
+    }
+    
+    func testTableOfJawBreaker() {
+        CandySearch.tapJawBreaker()
+        CandyDetailView.tapBackButtonJawBreaker()
     }
     
     func testAllButton() {
@@ -65,10 +87,18 @@ class CandySearchUITestsCases : CandySearchUITestsBase {
     func testCancelButton() {
         let searchField = CandySearchApp.searchFields["Search"]
         searchField.tap()
-        searchField.typeText("Hard")
+        searchField.typeText("Choco")
         CandyButtonsView.tapCancelButton()
         let exits = CandySearchIdentifier.tableOfCaramel.elementExits
         XCTAssertTrue(exits, "Not Exits")
+    }
+    
+    func testSearchField() {
+        let searchField = CandySearchApp.searchFields["Search"]
+        searchField.tap()
+        searchField.typeText("Chocolate")
+        let exits = CandySearchIdentifier.tableOfChocolateChip.elementExits
+        XCTAssertTrue(exits, "Does not exits")
     }
 
     
