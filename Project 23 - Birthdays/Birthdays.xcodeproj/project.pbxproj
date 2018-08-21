@@ -17,7 +17,24 @@
 		C0B57C611BB801510057F985 /* ContactBirthdayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B57C601BB801510057F985 /* ContactBirthdayCell.swift */; };
 		C0B57C631BB801CF0057F985 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B57C621BB801CF0057F985 /* AddContactViewController.swift */; };
 		C0B57C651BB804590057F985 /* CreateContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B57C641BB804590057F985 /* CreateContactViewController.swift */; };
+		E426E22B212B27E100EFF615 /* BirthdaysAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426E22A212B27E100EFF615 /* BirthdaysAccessibility.swift */; };
+		E426E233212B289D00EFF615 /*  BirhtdaysUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426E232212B289D00EFF615 /*  BirhtdaysUITestBase.swift */; };
+		E426E23B212B292F00EFF615 /* BirthdaysUITestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426E23A212B292F00EFF615 /* BirthdaysUITestCases.swift */; };
+		E426E23D212B297200EFF615 /* BirthdaysGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426E23C212B297200EFF615 /* BirthdaysGlobal.swift */; };
+		E426E23F212B32F900EFF615 /* WriteContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426E23E212B32F900EFF615 /* WriteContact.swift */; };
+		E426E241212B332D00EFF615 /*  ContactTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426E240212B332D00EFF615 /*  ContactTableView.swift */; };
+		E426E243212B48E100EFF615 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426E242212B48E100EFF615 /* ContactView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E426E235212B289D00EFF615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0B57C411BB7FDDA0057F985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0B57C481BB7FDDA0057F985;
+			remoteInfo = Birthdays;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		199230AE1E39115700A13D23 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -32,10 +49,26 @@
 		C0B57C601BB801510057F985 /* ContactBirthdayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactBirthdayCell.swift; sourceTree = "<group>"; };
 		C0B57C621BB801CF0057F985 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		C0B57C641BB804590057F985 /* CreateContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateContactViewController.swift; sourceTree = "<group>"; };
+		E426E22A212B27E100EFF615 /* BirthdaysAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysAccessibility.swift; sourceTree = "<group>"; };
+		E426E230212B289D00EFF615 /* BirthdaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirthdaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E426E232212B289D00EFF615 /*  BirhtdaysUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " BirhtdaysUITestBase.swift"; sourceTree = "<group>"; };
+		E426E234212B289D00EFF615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E426E23A212B292F00EFF615 /* BirthdaysUITestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysUITestCases.swift; sourceTree = "<group>"; };
+		E426E23C212B297200EFF615 /* BirthdaysGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysGlobal.swift; sourceTree = "<group>"; };
+		E426E23E212B32F900EFF615 /* WriteContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteContact.swift; sourceTree = "<group>"; };
+		E426E240212B332D00EFF615 /*  ContactTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ContactTableView.swift"; sourceTree = "<group>"; };
+		E426E242212B48E100EFF615 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C0B57C461BB7FDDA0057F985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E426E22D212B289D00EFF615 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				C0B57C4B1BB7FDDA0057F985 /* Birthdays */,
+				E426E229212B274200EFF615 /* BirthdaysAccessibility */,
+				E426E231212B289D00EFF615 /* BirthdaysUITests */,
 				C0B57C4A1BB7FDDA0057F985 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C0B57C491BB7FDDA0057F985 /* Birthdays.app */,
+				E426E230212B289D00EFF615 /* BirthdaysUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +115,28 @@
 			path = Birthdays;
 			sourceTree = "<group>";
 		};
+		E426E229212B274200EFF615 /* BirthdaysAccessibility */ = {
+			isa = PBXGroup;
+			children = (
+				E426E22A212B27E100EFF615 /* BirthdaysAccessibility.swift */,
+			);
+			path = BirthdaysAccessibility;
+			sourceTree = "<group>";
+		};
+		E426E231212B289D00EFF615 /* BirthdaysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E426E23C212B297200EFF615 /* BirthdaysGlobal.swift */,
+				E426E23E212B32F900EFF615 /* WriteContact.swift */,
+				E426E240212B332D00EFF615 /*  ContactTableView.swift */,
+				E426E242212B48E100EFF615 /* ContactView.swift */,
+				E426E232212B289D00EFF615 /*  BirhtdaysUITestBase.swift */,
+				E426E23A212B292F00EFF615 /* BirthdaysUITestCases.swift */,
+				E426E234212B289D00EFF615 /* Info.plist */,
+			);
+			path = BirthdaysUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,18 +157,43 @@
 			productReference = C0B57C491BB7FDDA0057F985 /* Birthdays.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E426E22F212B289D00EFF615 /* BirthdaysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E426E237212B289D00EFF615 /* Build configuration list for PBXNativeTarget "BirthdaysUITests" */;
+			buildPhases = (
+				E426E22C212B289D00EFF615 /* Sources */,
+				E426E22D212B289D00EFF615 /* Frameworks */,
+				E426E22E212B289D00EFF615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E426E236212B289D00EFF615 /* PBXTargetDependency */,
+			);
+			name = BirthdaysUITests;
+			productName = BirthdaysUITests;
+			productReference = E426E230212B289D00EFF615 /* BirthdaysUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C0B57C411BB7FDDA0057F985 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Appcoda;
 				TargetAttributes = {
 					C0B57C481BB7FDDA0057F985 = {
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 0900;
+					};
+					E426E22F212B289D00EFF615 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = C94WC52RNY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0B57C481BB7FDDA0057F985;
 					};
 				};
 			};
@@ -128,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				C0B57C481BB7FDDA0057F985 /* Birthdays */,
+				E426E22F212B289D00EFF615 /* BirthdaysUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +228,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E426E22E212B289D00EFF615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -153,6 +244,7 @@
 			files = (
 				C0B57C611BB801510057F985 /* ContactBirthdayCell.swift in Sources */,
 				C0B57C631BB801CF0057F985 /* AddContactViewController.swift in Sources */,
+				E426E22B212B27E100EFF615 /* BirthdaysAccessibility.swift in Sources */,
 				C0B57C651BB804590057F985 /* CreateContactViewController.swift in Sources */,
 				C0B57C4F1BB7FDDA0057F985 /* ViewController.swift in Sources */,
 				C0B57C4D1BB7FDDA0057F985 /* AppDelegate.swift in Sources */,
@@ -160,7 +252,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E426E22C212B289D00EFF615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E426E23D212B297200EFF615 /* BirthdaysGlobal.swift in Sources */,
+				E426E243212B48E100EFF615 /* ContactView.swift in Sources */,
+				E426E23F212B32F900EFF615 /* WriteContact.swift in Sources */,
+				E426E23B212B292F00EFF615 /* BirthdaysUITestCases.swift in Sources */,
+				E426E241212B332D00EFF615 /*  ContactTableView.swift in Sources */,
+				E426E233212B289D00EFF615 /*  BirhtdaysUITestBase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E426E236212B289D00EFF615 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0B57C481BB7FDDA0057F985 /* Birthdays */;
+			targetProxy = E426E235212B289D00EFF615 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0B57C501BB7FDDA0057F985 /* Main.storyboard */ = {
@@ -306,6 +419,53 @@
 			};
 			name = Release;
 		};
+		E426E238212B289D00EFF615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94WC52RNY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BirthdaysUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Farjana-Nipa.BirthdaysUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Birthdays;
+			};
+			name = Debug;
+		};
+		E426E239212B289D00EFF615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C94WC52RNY;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = BirthdaysUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Farjana-Nipa.BirthdaysUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Birthdays;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +483,15 @@
 			buildConfigurations = (
 				C0B57C5C1BB7FDDA0057F985 /* Debug */,
 				C0B57C5D1BB7FDDA0057F985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E426E237212B289D00EFF615 /* Build configuration list for PBXNativeTarget "BirthdaysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E426E238212B289D00EFF615 /* Debug */,
+				E426E239212B289D00EFF615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
