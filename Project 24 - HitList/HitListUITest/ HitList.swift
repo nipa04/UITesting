@@ -23,7 +23,8 @@ extension HitListAccessibilityIdentifier : UIElement  {
     }
     
 }
-class HitList() {
+
+class HitList {
     
     static func tapTableOfNipa() {
         HitListAccessibilityIdentifier.tableOfNipa.element.tap()
