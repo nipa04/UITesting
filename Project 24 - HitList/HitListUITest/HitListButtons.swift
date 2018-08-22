@@ -20,9 +20,9 @@ extension HitListButtons: UIElement {
         case .addButton :
             return HitListApp.navigationBars["The List"].buttons[self.identifier]
         case .saveButton:
-            return HitListApp.navigationBars["The List"].alerts.buttons[self.identifier]
+            return HitListApp.alerts.buttons[self.identifier]
         case .cancelButton:
-            return HitListApp.navigationBars["The List"].alerts.buttons[self.identifier]
+            return HitListApp.alerts.buttons[self.identifier]
         }
     }
     

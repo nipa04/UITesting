@@ -16,7 +16,7 @@
 		E4533A3A212C73D800F1D0D4 /*  HitListTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4533A39212C73D800F1D0D4 /*  HitListTestBase.swift */; };
 		E4533A42212C740D00F1D0D4 /* HitListGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4533A41212C740D00F1D0D4 /* HitListGlobal.swift */; };
 		E4533A44212C74A400F1D0D4 /* HitListTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4533A43212C74A400F1D0D4 /* HitListTestCases.swift */; };
-		E4533A46212C75C000F1D0D4 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4533A45212C75C000F1D0D4 /* List.swift */; };
+		E4533A46212C75C000F1D0D4 /*  HitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4533A45212C75C000F1D0D4 /*  HitList.swift */; };
 		E4533A4E212C8DFA00F1D0D4 /*  HitListAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4533A4D212C8DFA00F1D0D4 /*  HitListAccessibilityIdentifier.swift */; };
 		E4533A4F212C8DFA00F1D0D4 /*  HitListAccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4533A4D212C8DFA00F1D0D4 /*  HitListAccessibilityIdentifier.swift */; };
 		E4533A55212C902C00F1D0D4 /* HitListButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4533A54212C902C00F1D0D4 /* HitListButtons.swift */; };
@@ -62,7 +62,7 @@
 		E4533A3B212C73D800F1D0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4533A41212C740D00F1D0D4 /* HitListGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitListGlobal.swift; sourceTree = "<group>"; };
 		E4533A43212C74A400F1D0D4 /* HitListTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitListTestCases.swift; sourceTree = "<group>"; };
-		E4533A45212C75C000F1D0D4 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		E4533A45212C75C000F1D0D4 /*  HitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " HitList.swift"; sourceTree = "<group>"; };
 		E4533A4D212C8DFA00F1D0D4 /*  HitListAccessibilityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " HitListAccessibilityIdentifier.swift"; sourceTree = "<group>"; };
 		E4533A54212C902C00F1D0D4 /* HitListButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitListButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E4533A41212C740D00F1D0D4 /* HitListGlobal.swift */,
-				E4533A45212C75C000F1D0D4 /* List.swift */,
+				E4533A45212C75C000F1D0D4 /*  HitList.swift */,
 				E4533A54212C902C00F1D0D4 /* HitListButtons.swift */,
 				E4533A39212C73D800F1D0D4 /*  HitListTestBase.swift */,
 				E4533A43212C74A400F1D0D4 /* HitListTestCases.swift */,
@@ -349,7 +349,7 @@
 				E4533A4F212C8DFA00F1D0D4 /*  HitListAccessibilityIdentifier.swift in Sources */,
 				E4533A55212C902C00F1D0D4 /* HitListButtons.swift in Sources */,
 				E4533A42212C740D00F1D0D4 /* HitListGlobal.swift in Sources */,
-				E4533A46212C75C000F1D0D4 /* List.swift in Sources */,
+				E4533A46212C75C000F1D0D4 /*  HitList.swift in Sources */,
 				E4533A3A212C73D800F1D0D4 /*  HitListTestBase.swift in Sources */,
 				E4533A44212C74A400F1D0D4 /* HitListTestCases.swift in Sources */,
 			);
