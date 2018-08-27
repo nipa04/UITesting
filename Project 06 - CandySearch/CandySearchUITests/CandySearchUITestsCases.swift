@@ -111,8 +111,6 @@ func testExample() {
     app.typeText("\r")
     app.buttons["Cancel"].tap()
     XCUIApplication().navigationBars["Master"].staticTexts.containing(.image, identifier:"Inline-Logo").element.tap()
-   
-}
-    
+    }
     
 }
