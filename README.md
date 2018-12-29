@@ -4,7 +4,7 @@ iOS UITesting or regression testing is an important steps to gain release confid
 
 ## Architecture 
 
-Following a good architecture is one of the most important part of any level development. I started with static method based but then found another oen which is much efficient. 
+Following a good architecture is one of the most important part of any level development. I started with static method based but then found another one  which is much efficient. 
 
 ### Method 1
 * Convert all testable screen to swift page 
